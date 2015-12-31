@@ -2,7 +2,7 @@
   "name": "@f/wrap-redux-ware",
   "description": "Convert redux middleware into a regular function that takes an &#x60;action&#x60;.",
   "repository": "git://github.com/micro-js/wrap-redux-ware.git",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
