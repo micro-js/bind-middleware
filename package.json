@@ -2,7 +2,7 @@
   "name": "@f/bind-middleware",
   "description": "Bind middleware to a context and optionally a next function..",
   "repository": "git://github.com/micro-js/bind-middleware.git",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
