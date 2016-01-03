@@ -1,7 +1,7 @@
 {
-  "name": "@f/wrap-redux-ware",
-  "description": "Convert redux middleware into a regular function that takes an &#x60;action&#x60;.",
-  "repository": "git://github.com/micro-js/wrap-redux-ware.git",
+  "name": "@f/bind-middleware",
+  "description": "Bind middleware to a context and optionally a next function..",
+  "repository": "git://github.com/micro-js/bind-middleware.git",
   "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@f/clone-obj": "^1.1.2",
-    "@f/compose-redux-ware": "^1.0.0",
+    "@f/compose-middleware": "^2.0.0",
     "@f/is-array": "^1.1.1"
   },
   "devDependencies": {

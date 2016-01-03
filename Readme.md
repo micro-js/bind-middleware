@@ -1,26 +1,27 @@
 
-# wrap-redux-ware
+# bind-middleware
 
 [![Build status][travis-image]][travis-url]
 [![Git tag][git-image]][git-url]
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-Convert redux middleware into a regular function that takes an &#x60;action&#x60;.
+Bind middleware to a context with a dispatch and optionally a next function, so that
+actions can be dispatched to the middleware stack.
 
 ## Installation
 
-    $ npm install @f/wrap-redux-ware
+    $ npm install @f/bind-middleware
 
 ## Usage
 
 ```js
-var wrapReduxWare = require('@f/wrap-redux-ware')
+var bindMiddleware = require('@f/bind-middleware')
 
 var logger = require('redux-logger')
 var thunk = require('redux-thunk')
 
-var dispatch = wrapReduxWare([
+var dispatch = bindMiddleware([
   thunk,
   logger()
 ])
@@ -37,7 +38,7 @@ dispatch(dispatch => {
 
 ## API
 
-### wrapReduxWare(middleware, ctx, next)
+### bindMiddleware(middleware, ctx, next)
 
 - `middleware` - array of redux middleware
 - `ctx` - context to pass to middleware
@@ -50,11 +51,11 @@ dispatches to middleware stack.
 
 MIT
 
-[travis-image]: https://img.shields.io/travis/micro-js/wrap-redux-ware.svg?style=flat-square
-[travis-url]: https://travis-ci.org/micro-js/wrap-redux-ware
-[git-image]: https://img.shields.io/github/tag/micro-js/wrap-redux-ware.svg
-[git-url]: https://github.com/micro-js/wrap-redux-ware
+[travis-image]: https://img.shields.io/travis/micro-js/bind-middleware.svg?style=flat-square
+[travis-url]: https://travis-ci.org/micro-js/bind-middleware
+[git-image]: https://img.shields.io/github/tag/micro-js/bind-middleware.svg
+[git-url]: https://github.com/micro-js/bind-middleware
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [standard-url]: https://github.com/feross/standard
-[npm-image]: https://img.shields.io/npm/v/@f/wrap-redux-ware.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@f/wrap-redux-ware
+[npm-image]: https://img.shields.io/npm/v/@f/bind-middleware.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/bind-middleware
